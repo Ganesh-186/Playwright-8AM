@@ -26,5 +26,6 @@ test('Locators',async({page})=>{
     await page.goto('https://www.amazon.in/');
     await page.locator('#value').fill('text')
     await page.locator('#value').click();
+    await page.waitForTimeout(4000)
 
 })
